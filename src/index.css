@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,500;1,600&display=swap');
+* { font-family: 'Inter', sans-serif; }
+.font-playfair { font-family: 'Playfair Display', serif; }
+/* let em/strong inherit serif inside headings (the * rule above has zero specificity) */
+em, strong { font-family: inherit; }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes heroReveal { 0%{opacity:0;transform:translateY(28px);filter:blur(12px)} 100%{opacity:1;transform:translateY(0);filter:blur(0)} }
+@keyframes heroFadeUp { 0%{opacity:0;transform:translateY(20px)} 100%{opacity:1;transform:translateY(0)} }
+@keyframes heroZoom { 0%{transform:scale(1.12)} 100%{transform:scale(1)} }
+.hero-anim { opacity:0; animation-fill-mode:forwards; animation-timing-function:cubic-bezier(0.16,1,0.3,1); }
+.hero-reveal { animation-name:heroReveal; animation-duration:1.1s; }
+.hero-fade { animation-name:heroFadeUp; animation-duration:1s; }
+.hero-zoom { animation:heroZoom 1.8s cubic-bezier(0.16,1,0.3,1) forwards; }
+@media (prefers-reduced-motion: reduce){ .hero-anim,.hero-zoom{ animation:none; opacity:1; } }
+
+/* ---- Global polish ---- */
+html { scroll-behavior: smooth; }
+::selection { background: rgba(16,185,129,0.35); color: #fff; }
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 5px; border: 2px solid #000; }
+::-webkit-scrollbar-thumb:hover { background: #10b981; }
+
+/* ---- Scroll reveal (transform/opacity only — cheap) ---- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.9s cubic-bezier(0.16,1,0.3,1),
+    transform 0.9s cubic-bezier(0.16,1,0.3,1);
+  transition-delay: calc(var(--rd, 0) * 90ms);
+  will-change: opacity, transform;
+}
+[data-reveal].revealed { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] { opacity: 1; transform: none; transition: none; }
+}
+
+/* ---- Glassmorphism system ---- */
+.glass {
+  background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.08),
+    0 12px 40px -12px rgba(0,0,0,0.5);
+}
+.glass-hover {
+  transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.glass-hover:hover {
+  border-color: rgba(16,185,129,0.35);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.10),
+    0 12px 48px -12px rgba(16,185,129,0.15);
+}
+
+/* Cursor-tracked emerald glow inside glass cards. Driven by --gx/--gy CSS
+   vars set on pointermove (event-driven, no animation loop). */
+.glow-card { position: relative; overflow: hidden; }
+.glow-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    420px circle at var(--gx, 50%) var(--gy, 50%),
+    rgba(16,185,129,0.13),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+.glow-card:hover::before { opacity: 1; }
+@media (hover: none) { .glow-card::before { display: none; } }
+
+/* ---- CSS-only marquee ---- */
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }
+
+/* ---- Editorial motifs ---- */
+.ghost-num {
+  position: absolute; top: 0;
+  font-family: 'Playfair Display', serif; font-style: italic;
+  font-size: clamp(10rem, 20vw, 19rem); line-height: 0.8;
+  color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,0.07);
+  pointer-events: none; user-select: none; z-index: 0;
+}
+.marquee-outline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255,255,255,0.30);
+}
+.link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.45s cubic-bezier(0.16,1,0.3,1);
+}
+.link-underline:hover { background-size: 100% 2px; }
