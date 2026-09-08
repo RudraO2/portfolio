@@ -2,7 +2,7 @@
 
 My personal website and project showcase, built with React 19, TypeScript, Vite, and Tailwind CSS.
 
-Live at: [https://rudrao2.github.io/portfolio/](https://github.com/RudraO2/portfolio)
+Live at: [https://github.com/RudraO2/portfolio](https://rudrao2.vercel.app/)
 
 ---
 
