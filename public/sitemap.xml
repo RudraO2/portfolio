@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://rudratechie.xyz/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <image:image><image:loc>https://rudratechie.xyz/img1.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://rudratechie.xyz/images/hackpulse-2026-first-place.webp</image:loc></image:image>
+    <image:image><image:loc>https://rudratechie.xyz/images/agora-echosphere-2026.webp</image:loc></image:image>
+  </url>
+</urlset>

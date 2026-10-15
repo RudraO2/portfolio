@@ -1,0 +1,21 @@
+# Rudra Techie
+
+> Rudra Techie is the online name of Rudra Pratap Singh (earlier known as Rudra O2), a developer from Jaipur, India, and a BS in Data Science student at IIT Madras. Rudra builds web apps, Android tools and AI benchmarks and ships them where people can use them.
+
+## Wins
+- 1st Place, HackPulse 2026 "The Pre Heist", UEM Jaipur, 4 Oct 2026 (solo, team Hot Reload). Built a dashboard to run Slack, Telegram and WhatsApp groups from one place.
+- 3rd Runner Up, Agora EchoSphere 2026 Hackathon, Microsoft office Gurugram, 12 Sep 2026. Team built Aria, a real-time voice sales agent: https://github.com/Aryan-Techie/aria
+- Speaker and co-organiser, Omarchy New Delhi, 10 Oct 2026. Talk: "The Systematic Way of Vibe Coding".
+
+## Projects
+- [tokenbrawl](https://github.com/RudraO2/tokenbrawl): LLM-vs-LLM fighting benchmark with a per-match token bank
+- [Office Drama](https://officedrama1.netlify.app/game): 2D office game where NPCs share one database and spread gossip
+- [NSE Screener](https://nse-screener1.streamlit.app): Indian market cycle and momentum screener
+- [Faraday](https://github.com/RudraO2/Faraday): on-premise AI workbench, Smart India Hackathon 2026 prototype
+- [Ghostpad](https://github.com/RudraO2/ghostpad): notes app that is secretly a private messenger
+- [TrueG](https://github.com/RudraO2/TrueG): Android app that tells you if you are really on 5G
+
+## Profiles
+- Website: https://rudratechie.xyz/
+- GitHub: https://github.com/RudraO2
+- LinkedIn: https://www.linkedin.com/in/rudratechie/

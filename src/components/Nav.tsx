@@ -1,6 +1,7 @@
 const links = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Wins', href: '#achievements' },
   { label: 'Work', href: '#projects' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -8,7 +9,7 @@ const links = [
 export function Nav() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between p-4 sm:p-5">
-      <span className="text-white text-2xl font-playfair italic">Rudra Pratap Singh</span>
+      <a href="/" className="text-white text-2xl font-playfair italic">Rudra Techie</a>
 
       <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-2 py-2 items-center gap-1">
         {links.map(({ label, href }) => (

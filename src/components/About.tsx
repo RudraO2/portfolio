@@ -37,8 +37,8 @@ export function About() {
               onPointerMove={trackGlow}
             >
               <p className="text-lg md:text-xl text-white/70 leading-relaxed">
-                I&apos;m Rudra Pratap Singh, studying Data Science at IIT Madras and building from
-                Jaipur. Most of what I create starts from personal annoyance: phone carriers showing
+                I&apos;m Rudra Pratap Singh, known online as Rudra Techie (earlier Rudra O2). I study
+                Data Science at IIT Madras and build from Jaipur. Most of what I create starts from personal annoyance: phone carriers showing
                 fake 5G icons, private notes being exposed on screen, or benchmarks that reward
                 pure API speed over actual reasoning.
               </p>
@@ -55,12 +55,14 @@ export function About() {
             <figure className="cursor-target group glass relative rounded-3xl overflow-hidden p-2 md:rotate-2 md:hover:rotate-0 transition-transform duration-500">
               <img
                 src="/img2.jpeg"
-                alt="Rudra Pratap Singh"
+                alt="Rudra Techie (Rudra Pratap Singh), developer from Jaipur"
+                width={1376}
+                height={768}
                 loading="lazy"
                 className="w-full aspect-[4/5] object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-[filter] duration-700"
               />
               <figcaption className="absolute inset-x-2 bottom-2 flex items-center justify-between px-5 py-4 rounded-b-2xl bg-gradient-to-t from-black/80 to-transparent">
-                <span className="font-playfair italic text-white text-lg">Rudra</span>
+                <span className="font-playfair italic text-white text-lg">Rudra Techie</span>
                 <span className="text-xs uppercase tracking-[0.2em] text-white/60">
                   Jaipur, India
                 </span>

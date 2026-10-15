@@ -90,10 +90,10 @@ export function Projects() {
             'radial-gradient(55% 45% at 20% 15%, rgba(16,185,129,0.10), transparent 60%), radial-gradient(45% 40% at 90% 80%, rgba(45,212,191,0.07), transparent 60%)',
         }}
       />
-      <GhostNum n="03" />
+      <GhostNum n="04" side="left" />
 
       <div className="relative z-10 max-w-6xl mx-auto">
-        <Kicker num="03" label="Work" />
+        <Kicker num="04" label="Work" />
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-16 md:mb-20">
           <h2

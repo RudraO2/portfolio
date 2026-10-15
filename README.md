@@ -2,7 +2,7 @@
 
 My personal website and project showcase, built with React 19, TypeScript, Vite, and Tailwind CSS.
 
-Live at: [https://rudrao2.vercel.app/](https://rudrao2.vercel.app/)
+Live at: [rudratechie.xyz](https://rudratechie.xyz/) (also [rudrao2.vercel.app](https://rudrao2.vercel.app/))
 
 ---
 
@@ -14,6 +14,7 @@ A dark-mode portfolio built to show my work across web apps, mobile tools, and A
 - **Target cursor:** A rotating custom cursor that locks onto interactive cards and buttons.
 - **Card glow effects:** Glassmorphic cards with mouse-tracked border gradients that follow your cursor without heavy animation libraries.
 - **Editorial typography:** Playfair Display for big editorial headings paired with clean Inter body copy.
+- **Prerendered HTML:** the build renders the app to static HTML (`src/entry-server.tsx`, `scripts/prerender.mjs`) so search engines and link previews see the full page, then React hydrates it.
 
 ---
 
@@ -65,17 +66,22 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-To create a production build:
+To create a production build (type check, client build, then prerender into `dist/index.html`):
 
 ```bash
 npm run build
+npx vite preview
 ```
 
 ---
 
 ## About me
 
-I am Rudra Pratap Singh, currently studying Data Science at IIT Madras (class of 2027) and building from Jaipur. I build web apps, mobile tools, and AI evaluations, then ship them out where people can actually use them.
+I am Rudra Pratap Singh, known online as Rudra Techie (earlier Rudra O2). I am studying Data Science at IIT Madras (class of 2027) and building from Jaipur. I build web apps, mobile tools, and AI evaluations, then ship them out where people can actually use them.
 
+Wins: 1st place at HackPulse 2026 (UEM Jaipur) and 3rd Runner Up at Agora EchoSphere 2026.
+
+- **Website:** [rudratechie.xyz](https://rudratechie.xyz/)
 - **GitHub:** [@RudraO2](https://github.com/RudraO2)
+- **LinkedIn:** [rudratechie](https://www.linkedin.com/in/rudratechie/)
 - **Email:** [24f3001340@ds.study.iitm.ac.in](mailto:24f3001340@ds.study.iitm.ac.in)

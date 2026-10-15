@@ -3,6 +3,7 @@ import { RevealLayer } from './components/RevealLayer'
 import { About } from './components/About'
 import { Skills } from './components/Skills'
 import { TechMarquee } from './components/TechMarquee'
+import { Achievements } from './components/Achievements'
 import { Projects } from './components/Projects'
 import { Contact } from './components/Contact'
 import TargetCursor from './components/reactbits/TargetCursor'
@@ -39,6 +40,12 @@ function App() {
         <div className="absolute left-10 md:left-14 right-5 bottom-44 sm:bottom-48 z-50 flex flex-col items-start text-left pointer-events-none">
           <h1 className="text-white leading-[0.95]">
             <span
+              className="block mb-4 text-xs sm:text-sm uppercase tracking-[0.25em] text-white/80 hero-anim hero-fade"
+              style={{ animationDelay: '0.1s' }}
+            >
+              Rudra Techie <span className="text-white/50">· Rudra Pratap Singh</span>
+            </span>
+            <span
               className="block font-playfair italic font-normal text-5xl sm:text-7xl md:text-8xl hero-anim hero-reveal"
               style={{ letterSpacing: '-0.05em', animationDelay: '0.25s' }}
             >
@@ -59,8 +66,8 @@ function App() {
           style={{ animationDelay: '0.7s' }}
         >
           <p className="text-sm text-white/80 leading-relaxed">
-            A personal showcase of my creative journey, technical projects, and the ambitious
-            ideas I am bringing to life.
+            Developer from Jaipur and IIT Madras student. A showcase of my projects, hackathon
+            wins, and the ideas I am bringing to life.
           </p>
         </div>
 
@@ -86,6 +93,7 @@ function App() {
         <About />
         <Skills />
         <TechMarquee />
+        <Achievements />
         <Projects />
         <Contact />
       </main>

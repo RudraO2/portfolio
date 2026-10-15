@@ -2,9 +2,131 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/jpeg" href="/img1.jpeg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rudra Pratap Singh — Portfolio</title>
+    <title>Rudra Techie (Rudra Pratap Singh) | Developer from Jaipur</title>
+    <meta
+      name="description"
+      content="Rudra Techie (Rudra Pratap Singh, also known as Rudra O2) is a developer from Jaipur and IIT Madras Data Science student. HackPulse 2026 winner. Projects, wins and contact."
+    />
+    <meta name="author" content="Rudra Techie" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://rudratechie.xyz/" />
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Hero images: start downloading before the JS runs -->
+    <link rel="preload" as="image" href="/img1.jpeg" fetchpriority="high" />
+    <link rel="preload" as="image" href="/img2.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Load fonts without blocking first paint -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400;1,500;1,600&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400;1,500;1,600&display=swap"
+      />
+    </noscript>
+
+    <!-- Link previews (LinkedIn, WhatsApp, X, Slack) -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Rudra Techie" />
+    <meta property="og:title" content="Rudra Techie (Rudra Pratap Singh)" />
+    <meta
+      property="og:description"
+      content="Developer from Jaipur, IIT Madras Data Science student, HackPulse 2026 winner. I build small useful things and ship them."
+    />
+    <meta property="og:url" content="https://rudratechie.xyz/" />
+    <meta property="og:image" content="https://rudratechie.xyz/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Rudra Techie" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="profile:first_name" content="Rudra Pratap" />
+    <meta property="profile:last_name" content="Singh" />
+    <meta property="profile:username" content="rudratechie" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rudra Techie (Rudra Pratap Singh)" />
+    <meta
+      name="twitter:description"
+      content="Developer from Jaipur, IIT Madras Data Science student, HackPulse 2026 winner."
+    />
+    <meta name="twitter:image" content="https://rudratechie.xyz/og-image.jpg" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://rudratechie.xyz/#person",
+            "name": "Rudra Techie",
+            "alternateName": ["Rudra Pratap Singh", "Rudra O2", "RudraO2"],
+            "givenName": "Rudra Pratap",
+            "familyName": "Singh",
+            "url": "https://rudratechie.xyz/",
+            "image": "https://rudratechie.xyz/img1.jpeg",
+            "email": "mailto:24f3001340@ds.study.iitm.ac.in",
+            "jobTitle": "Software developer",
+            "description": "Developer from Jaipur building web apps, Android tools and AI benchmarks. BS in Data Science student at IIT Madras.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Jaipur",
+              "addressRegion": "Rajasthan",
+              "addressCountry": "IN"
+            },
+            "affiliation": {
+              "@type": "CollegeOrUniversity",
+              "name": "Indian Institute of Technology Madras",
+              "alternateName": "IIT Madras",
+              "url": "https://www.iitm.ac.in/"
+            },
+            "award": [
+              "1st Place, HackPulse 2026 (The Pre Heist), UEM Jaipur",
+              "3rd Runner Up, Agora EchoSphere 2026 Hackathon"
+            ],
+            "knowsAbout": [
+              "React", "Next.js", "TypeScript", "React Native", "Kotlin", "Python",
+              "Streamlit", "Supabase", "Large language models", "LLM benchmarking", "On-premise AI"
+            ],
+            "sameAs": [
+              "https://github.com/RudraO2",
+              "https://www.linkedin.com/in/rudratechie/"
+            ]
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://rudratechie.xyz/#profile",
+            "url": "https://rudratechie.xyz/",
+            "name": "Rudra Techie (Rudra Pratap Singh)",
+            "inLanguage": "en",
+            "dateModified": "2026-10-15",
+            "mainEntity": { "@id": "https://rudratechie.xyz/#person" }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://rudratechie.xyz/#website",
+            "url": "https://rudratechie.xyz/",
+            "name": "Rudra Techie",
+            "alternateName": ["Rudra Pratap Singh", "Rudra O2"],
+            "publisher": { "@id": "https://rudratechie.xyz/#person" }
+          }
+        ]
+      }
+    </script>
+
+    <!-- Without JS the scroll-reveal never fires, so show everything -->
+    <noscript>
+      <style>[data-reveal], .hero-anim { opacity: 1 !important; transform: none !important; }</style>
+    </noscript>
   </head>
   <body>
     <div id="root"></div>

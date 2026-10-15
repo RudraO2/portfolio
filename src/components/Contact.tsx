@@ -21,10 +21,10 @@ export function Contact() {
             'radial-gradient(60% 50% at 50% 100%, rgba(16,185,129,0.12), transparent 65%), radial-gradient(40% 40% at 85% 10%, rgba(45,212,191,0.07), transparent 60%)',
         }}
       />
-      <GhostNum n="04" side="left" />
+      <GhostNum n="05" />
 
       <div className="relative z-10 max-w-6xl mx-auto">
-        <Kicker num="04" label="Contact" />
+        <Kicker num="05" label="Contact" />
 
         <h2
           className="font-playfair text-5xl sm:text-6xl md:text-8xl font-normal leading-[1.02] max-w-4xl"
@@ -77,15 +77,25 @@ export function Contact() {
         </div>
 
         <footer className="mt-24 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <span className="font-playfair italic text-xl text-white">Rudra Pratap Singh</span>
-          <div className="flex items-center gap-5">
+          <span className="font-playfair italic text-xl text-white">
+            Rudra Techie <span className="text-white/50 text-base">(Rudra Pratap Singh)</span>
+          </span>
+          <div className="flex flex-wrap items-center gap-5">
             <a
               href="https://github.com/RudraO2"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="me noopener noreferrer"
               className="cursor-target text-sm text-white/60 hover:text-emerald-300 transition-colors"
             >
               GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rudratechie/"
+              target="_blank"
+              rel="me noopener noreferrer"
+              className="cursor-target text-sm text-white/60 hover:text-emerald-300 transition-colors"
+            >
+              LinkedIn
             </a>
             <a
               href="mailto:24f3001340@ds.study.iitm.ac.in"
