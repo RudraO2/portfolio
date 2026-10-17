@@ -107,3 +107,9 @@ html { scroll-behavior: smooth; }
   transition: background-size 0.45s cubic-bezier(0.16,1,0.3,1);
 }
 .link-underline:hover { background-size: 100% 2px; }
+
+/* Generated project covers keep the Work cards tied to the site's dark, emerald system. */
+.project-card-image { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-bottom: 1px solid rgba(255,255,255,0.08); transition: transform 350ms cubic-bezier(0.16,1,0.3,1), filter 350ms ease; }
+.group:hover .project-card-image { transform: scale(1.015); filter: saturate(1.08); }
+.project-card-copy { position: relative; z-index: 1; }
+@media (prefers-reduced-motion: reduce) { .project-card-image { transition: none; } }

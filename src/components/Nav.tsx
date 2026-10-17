@@ -7,7 +7,7 @@ const links = [
   { label: 'Contact', href: '#contact' },
 ]
 
-export function Nav({ current }: { current?: 'writing' }) {
+export function Nav({ current }: { current?: 'writing' | 'project' }) {
   const visibleLinks = links.map(link => ({
     ...link,
     href: current && link.href.startsWith('#') ? `/${link.href}` : link.href,
@@ -36,7 +36,7 @@ export function Nav({ current }: { current?: 'writing' }) {
       >
         Hire Me
       </a>
-      <a href="/blog" className="md:hidden text-white text-sm border border-white/30 rounded-full px-4 py-2 bg-black/40">Writing ↗</a>
+      <a href={current === 'project' ? '/#projects' : '/blog'} className="md:hidden text-white text-sm border border-white/30 rounded-full px-4 py-2 bg-black/40">{current === 'project' ? 'Work ↗' : 'Writing ↗'}</a>
     </nav>
   )
 }

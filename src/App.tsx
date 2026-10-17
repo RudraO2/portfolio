@@ -10,6 +10,8 @@ import TargetCursor from './components/reactbits/TargetCursor'
 import { useRevealObserver } from './hooks/useReveal'
 import { BlogArticle, BlogIndex, NotFound, WritingPreview } from './blog/Blog'
 import { posts } from './content/posts'
+import { projects } from './content/projects'
+import { ProjectPage } from './projects/ProjectPage'
 
 const BG_IMAGE_1 = '/img1.jpeg'
 const BG_IMAGE_2 = '/img2.jpeg'
@@ -106,10 +108,12 @@ function Portfolio() {
 function App({ pathname = typeof window === 'undefined' ? '/' : window.location.pathname }: { pathname?: string }) {
   const path = pathname.replace(/\/+$/, '') || '/'
   const post = posts.find(item => path === `/blog/${item.slug}`)
+  const project = projects.find(item => path === `/projects/${item.slug}`)
   let page
   if (path === '/') page = <Portfolio />
   else if (path === '/blog') page = <BlogIndex />
   else if (post) page = <BlogArticle post={post} />
+  else if (project) page = <ProjectPage project={project} />
   else page = <NotFound />
 
   return <><TargetCursor targetSelector=".cursor-target, .journal a, .journal button, .journal input" spinDuration={2} />{page}</>

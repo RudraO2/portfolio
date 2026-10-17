@@ -11,7 +11,7 @@
       "students"
     ],
     "cover": "/images/blog/learning-1.webp",
-    "coverAlt": "A notebook showing a winding learning path from code to a small working model",
+    "coverAlt": "Learning AI cover: a beginner explores programming, mathematics and a small machine-learning experiment.",
     "lede": "The fastest way to feel behind in AI is to start by memorising every new tool. Start with one question you can test, and let the tools earn their place.",
     "status": "ready",
     "date": "2026-10-17",
@@ -114,7 +114,7 @@
       "learn AI by building"
     ],
     "cover": "/images/blog/learning-2.webp",
-    "coverAlt": "A small useful personal tool assembled on a workbench from notebook pages and code",
+    "coverAlt": "First AI project cover: a maker prototypes a useful tool for an everyday problem.",
     "lede": "A project becomes interesting the moment someone can explain the annoyance it removes. The word 'AI' is optional until the problem asks for it.",
     "status": "ready",
     "date": "2026-10-17",
@@ -184,7 +184,7 @@
       "MVP"
     ],
     "cover": "/images/blog/learning-3.webp",
-    "coverAlt": "An entrepreneur's notebook with customer notes beside an unfinished prototype",
+    "coverAlt": "Startup cover: a founder tests a paper prototype with customers before building a company.",
     "lede": "A good idea is a sentence. A startup begins when another person makes time, effort or money move to solve the problem.",
     "status": "ready",
     "date": "2026-10-17",
@@ -255,7 +255,7 @@
       "decision making"
     ],
     "cover": "/images/blog/learning-4.webp",
-    "coverAlt": "A workflow crossing a small lever that can either be flipped automatically or by a person",
+    "coverAlt": "Workflow automation cover: a decision gate routes routine tasks to software and exceptions to a person.",
     "lede": "A workflow does not need an agent just because it happens more than once. Automate the steps you understand well enough to catch when the automation is wrong.",
     "status": "ready",
     "date": "2026-10-17",
@@ -360,7 +360,7 @@
       "AI coding"
     ],
     "cover": "/images/blog/learning-5.webp",
-    "coverAlt": "A software project notebook beside a terminal showing orderly agile planning steps",
+    "coverAlt": "Claude Code with BMAD cover: a team plans requirements, architecture, implementation and tests.",
     "lede": "Claude Code does not need a giant prompt that says 'build my whole startup'. Give it the project context and a workflow that tells it what decision to make next.",
     "status": "ready",
     "date": "2026-10-17",
@@ -443,7 +443,7 @@
       "AI workflow"
     ],
     "cover": "/images/blog/learning-6.webp",
-    "coverAlt": "A coding agent's workspace with project notes connected to selected files of code",
+    "coverAlt": "Context engineering cover: a coding agent receives an organized repository map, task notes and source files.",
     "lede": "If the agent cannot tell which instruction matters, adding five more instructions is not help. Good context points at the code and facts that decide the task.",
     "status": "ready",
     "date": "2026-10-17",
@@ -516,7 +516,7 @@
       "benchmarking"
     ],
     "cover": "/images/blog/learning-7.webp",
-    "coverAlt": "A stack of carefully labelled test cards beside a small AI prototype",
+    "coverAlt": "AI evaluation set cover: a researcher assembles representative tasks, edge cases and scoring criteria.",
     "lede": "You do not need a public leaderboard to know your feature fails. Ten examples from the real task can reveal more than a hundred model comparisons with somebody else's prompts.",
     "status": "ready",
     "date": "2026-10-17",
@@ -589,7 +589,7 @@
       "learn AI"
     ],
     "cover": "/images/blog/learning-8.webp",
-    "coverAlt": "A short stream of text broken into glowing token blocks entering a transformer-shaped bridge",
+    "coverAlt": "Tokens and transformers cover: a sentence becomes token blocks and passes through a transformer model.",
     "lede": "The model does not read your paragraph the way you do. It gets a sequence of tokens and predicts what comes next. Remember that and a lot of mysterious LLM behaviour becomes easier to debug.",
     "status": "ready",
     "date": "2026-10-17",
@@ -657,7 +657,7 @@
       "machine learning research"
     ],
     "cover": "/images/blog/learning-9.webp",
-    "coverAlt": "An open AI research paper with one annotated result table and a pencil",
+    "coverAlt": "AI research paper cover: a reader traces a paper’s method, results and limitations.",
     "lede": "You do not have to understand every equation on the first pass. Start by finding out what question the paper actually answers and what evidence it uses.",
     "status": "ready",
     "date": "2026-10-17",
@@ -762,7 +762,7 @@
       "product engineering"
     ],
     "cover": "/images/blog/learning-10.webp",
-    "coverAlt": "A small AI prototype crossing a checkpoint with a human reviewer and rollback switch",
+    "coverAlt": "Safe AI deployment cover: a model launches behind monitoring, fallback and rollback controls.",
     "lede": "An AI demo has one path: the part that works. A real feature also needs a plan for the part that does not.",
     "status": "ready",
     "date": "2026-10-17",
