@@ -2,7 +2,7 @@ import { ArrowUpRight } from 'lucide-react'
 import { Kicker, GhostNum, trackGlow } from './Section'
 import { projects, projectPath } from '../content/projects'
 
-const featuredOrder = ['faraday', 'airgapped-os', 'visual-tutor', 'office-drama', 'tokenbrawl', 'nse-screener', 'ghostpad', 'trueg', 'stratum', 'genai-roadmap', 'anywherecode', 'six-months-left', 'hussh', 'whatsapp-automation']
+const featuredOrder = ['faraday', 'airgapped-os', 'visual-tutor', 'office-drama', 'tokenbrawl', 'nse-screener', 'ghostpad', 'trueg', 'stratum', 'genai-roadmap', 'anywherecode', 'six-months-left', 'whatsapp-automation']
 const featuredProjects = featuredOrder.map(slug => projects.find(project => project.slug === slug)!).filter(Boolean)
 
 export function Projects() {
@@ -36,7 +36,7 @@ export function Projects() {
             data-reveal
             style={{ '--rd': 1 } as React.CSSProperties}
           >
-            Fourteen build notes, from live tools to prototypes. Each page explains the design, implementation, and what the current version can actually do.
+            Thirteen build notes, from live tools to prototypes. Each page explains the design, implementation, and what the current version can actually do.
           </p>
         </div>
 

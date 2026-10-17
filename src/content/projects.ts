@@ -527,43 +527,7 @@ export const projects: PortfolioProject[] = [
       }
     ]
   },
-  {
-    slug: 'hussh',
-    title: 'Hussh',
-    status: 'Research and product workspace',
-    category: 'Private agents · Consent architecture',
-    description: 'A research workspace for private AI agents, scoped information access and consent-aware personal knowledge systems across web, mobile and developer surfaces.',
-    hook: 'An agent should have to earn access to the information it uses.',
-    cover: '/images/projects/hussh.webp',
-    coverSmall: '/images/projects/hussh-small.webp',
-    coverAlt: 'HUSSH arcade cover: AI agents wait outside a private vault while a single key represents controlled access.',
-    stack: ['Next.js', 'FastAPI', 'Google ADK', 'A2A', 'MCP', 'Client-side cryptography'],
-    github: 'https://github.com/RudraO2/hushh-research',
-    sourceLabel: 'Hussh architecture and consent protocol research',
-    sections: [
-      {
-        title: 'Personal AI needs a model for permission, not only memory',
-        paragraphs: [
-          'Hussh is a research and product workspace for private agents and scoped information infrastructure. Its central idea is that an agent should act for the person whose information it touches. The repository describes a system of agents with separate roles: a relationship layer, a finance specialist, a consent and privacy guardian, and an identity workflow specialist.',
-          'The project explores a problem that becomes easy to miss when an agent has access to more context: being signed in is not the same as having permission to perform every action. A capability can describe what an agent may do, which information it may use and how the permission can be revoked.'
-        ]
-      },
-      {
-        title: 'The design is split across clients, protocols and agent runtimes',
-        paragraphs: [
-          'The public repository is a multi-service workspace. It includes a Next.js and React client with a Capacitor mobile path, a FastAPI consent-protocol backend, a personal-knowledge model, Google ADK agent integration, and MCP and A2A developer surfaces. The separation makes interface, protocol and agent behavior independently inspectable.',
-          'The README describes client-side cryptography using user-held keys, scoped and revocable capability tokens, and a backend that stores ciphertext rather than plaintext personal memory. These are architecture claims documented by the project, not an independent security audit or a guarantee that every deployment configuration enforces them correctly.'
-        ]
-      },
-      {
-        title: 'Consent has to survive the full tool chain',
-        paragraphs: [
-          'A permission check is only meaningful if every path that reaches personal data checks it. An agent, an MCP tool, a mobile client, a backend route and a cached memory item can each become a place where scope is accidentally widened. The repository’s modular structure is useful because it gives those boundaries concrete places to review and test.',
-          'For a privacy-sensitive system, the next evidence should include threat models, protocol tests, key recovery behavior, deletion verification and an external security review. Product language about zero-knowledge storage should be treated as a design target until those properties are independently verified in a specific deployment.'
-        ]
-      }
-    ]
-  },
+
   {
     slug: 'whatsapp-automation',
     title: 'WhatsApp Automation',
