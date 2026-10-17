@@ -1,0 +1,823 @@
+[
+  {
+    "slug": "how-to-start-learning-ai",
+    "title": "How to Start Learning AI: A Practical Path",
+    "description": "A practical AI learning path from Python and machine learning basics to language models, evaluation and a first useful project, with a weekly study loop.",
+    "category": "Learning",
+    "tags": [
+      "learn AI",
+      "AI roadmap",
+      "machine learning",
+      "students"
+    ],
+    "cover": "/images/blog/learning-1.webp",
+    "coverAlt": "A notebook showing a winding learning path from code to a small working model",
+    "lede": "The fastest way to feel behind in AI is to start by memorising every new tool. Start with one question you can test, and let the tools earn their place.",
+    "status": "ready",
+    "date": "2026-10-17",
+    "related": [
+      "build-your-first-personal-ai-project",
+      "build-a-practical-ai-evaluation-set"
+    ],
+    "sources": [
+      {
+        "title": "Google Machine Learning Crash Course",
+        "url": "https://developers.google.com/machine-learning/crash-course"
+      },
+      {
+        "title": "Hugging Face course",
+        "url": "https://huggingface.co/learn"
+      },
+      {
+        "title": "PyTorch tutorials",
+        "url": "https://pytorch.org/tutorials/"
+      }
+    ],
+    "sections": [
+      {
+        "id": "learn-in-layers",
+        "title": "Learn in layers, not in a shopping list",
+        "paragraphs": [
+          "AI is a large field. You do not need to start by studying every subfield. If your goal is to build products with language models, learn enough Python to read data, call an API, write a function, handle an error and save a result. Then study the basic ML loop: data, objective, model, training, validation and inference. After that, learn how language models are used in applications.",
+          "This order gives you handles for the confusing parts. When a tutorial says a model was fine-tuned, you know to ask on what examples and against what objective. When an assistant fails, you can separate a model limitation from bad retrieval, brittle parsing or a permission mistake. The goal is not to win a vocabulary quiz. It is to know which part to inspect.",
+          "If you prefer maths, spend time on vectors, matrix multiplication, probability, gradients and loss. If maths currently feels like a wall, write code and come back to the equations when they explain something you have observed. Understanding grows through both directions."
+        ]
+      },
+      {
+        "id": "weekly-loop",
+        "title": "A weekly rhythm that turns reading into skill",
+        "paragraphs": [
+          "Pick one concept each week. Read one careful tutorial, reproduce a small example, change one variable and write down what happened. Keep the experiment tiny enough to finish. If you are learning classification, change the threshold or class balance and inspect the errors. If you are learning a language model, change one prompt or retrieval setting and compare the outputs.",
+          "Use official courses as scaffolding. Google's Machine Learning Crash Course covers core ML concepts and exercises. Hugging Face's course helps you work with the Transformers ecosystem. PyTorch's official tutorials are useful once you are ready to implement and inspect training workflows. A course is a map. Typing the code and understanding why it works is the actual walk.",
+          "Keep a notebook with three columns: question, experiment, result. Add a fourth column for the next question. This stops the common pattern of watching a pile of videos and confusing recognition with ability. At the end of the week, explain the idea without looking at the lesson. Whatever you cannot explain is a good next study target."
+        ]
+      },
+      {
+        "id": "curriculum",
+        "title": "A starter curriculum for builders",
+        "paragraphs": [
+          "Weeks one and two: Python, data handling, functions, lists, dictionaries, files and basic plotting. Build a script that takes messy text, extracts a few fields and reports a summary. Learn to use Git so experiments can be compared instead of lost.",
+          "Weeks three and four: supervised learning. Learn train, validation and test splits, classification, regression, loss, overfitting and evaluation. Train a small model on a clean educational dataset. Inspect mistakes instead of only celebrating accuracy.",
+          "Weeks five and six: neural network basics, embeddings, tokenization and transformer concepts. You do not need to implement a frontier model. You should understand the high-level role of tokens, attention, context and inference well enough to debug an application.",
+          "Weeks seven and eight: build one language model feature with a clear success measure. Learn structured outputs, retrieval, safety boundaries and evaluation only when your project needs them. This sequence is a starting route, not the one mandatory order for every learner."
+        ],
+        "table": {
+          "headers": [
+            "Layer",
+            "Learn enough to",
+            "Proof you can move on"
+          ],
+          "rows": [
+            [
+              "Programming",
+              "Read data and automate a small task",
+              "A script with handled failure cases"
+            ],
+            [
+              "ML fundamentals",
+              "Explain train versus test performance",
+              "A model with an error analysis"
+            ],
+            [
+              "Modern models",
+              "Describe tokens, context and inference",
+              "A working, inspectable prototype"
+            ],
+            [
+              "Product evaluation",
+              "Define a useful and harmful outcome",
+              "A small repeatable test set"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "first-project",
+        "title": "Let the project choose your next lesson",
+        "paragraphs": [
+          "Choose an annoyance small enough to complete in two weekends: search your own notes, sort a folder of receipts, summarise a set of permitted documents, or add speech input to a small tool. Name who uses it and what the current process costs them. 'Use AI to be productive' is not a user problem; 'I spend ten minutes finding the latest class notes' is closer.",
+          "Build the simplest version that could answer the question. First get the ordinary data flow working. Then add a model only if the task needs flexible language. Compare it with a search or rules-based version. You will learn more from an honest result than from a giant project that never leaves the mockup.",
+          "When it fails, write down the category: missing data, confusing interface, model mistake, wrong assumption, or slow interaction. Choose your next topic based on that failure. This is how learning becomes cumulative instead of a fresh course binge every week.",
+          "You are not late because a new model appeared before you finished a tutorial. The field keeps moving. A habit of testing claims and finishing small work is much more useful than pretending any roadmap can stay current forever."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "build-your-first-personal-ai-project",
+    "title": "Build an AI Project That Solves a Real Problem",
+    "description": "A step-by-step framework to choose a personal AI project, define its success measure, build a safe prototype and learn from the results.",
+    "category": "Building",
+    "tags": [
+      "personal project",
+      "AI project ideas",
+      "learn AI by building"
+    ],
+    "cover": "/images/blog/learning-2.webp",
+    "coverAlt": "A small useful personal tool assembled on a workbench from notebook pages and code",
+    "lede": "A project becomes interesting the moment someone can explain the annoyance it removes. The word 'AI' is optional until the problem asks for it.",
+    "status": "ready",
+    "date": "2026-10-17",
+    "related": [
+      "how-to-start-learning-ai",
+      "when-to-automate-a-workflow"
+    ],
+    "sources": [
+      {
+        "title": "Google People + AI Guidebook",
+        "url": "https://pair.withgoogle.com/guidebook/"
+      },
+      {
+        "title": "NIST AI Risk Management Framework",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      },
+      {
+        "title": "OpenAI evaluation best practices",
+        "url": "https://platform.openai.com/docs/guides/evals"
+      }
+    ],
+    "sections": [
+      {
+        "id": "find-friction",
+        "title": "Find friction in something you already do",
+        "paragraphs": [
+          "Look at your last seven days. What repeated task made you open three tabs, copy text between apps, sort the same files, or ask the same question? Pick a task you understand well enough to recognise a wrong answer. Personal projects work well because you have access to the user and can get quick feedback.",
+          "Write the job as a verb plus an object: search lecture notes, identify receipts, draft a reply, group support messages. Now describe the current steps and how often they happen. Estimate the pain without inflating it. 'It takes me five minutes twice a month' may be a real nuisance, but it may not justify a complicated AI service."
+        ]
+      },
+      {
+        "id": "scope",
+        "title": "Make the first version deliberately small",
+        "paragraphs": [
+          "Choose one input, one useful output and one person who will check it. Skip logins, subscriptions, team settings and autonomous actions until a user needs them. A project that completes one step reliably teaches you more than a dashboard around a feature that does not work.",
+          "Keep the original data visible. If your tool summarises a note, show the source passage beside the summary. If it creates a calendar suggestion, make the user confirm before writing to the calendar. Clarity and undo are part of the product, especially when the model can confidently make things up."
+        ]
+      },
+      {
+        "id": "choose-model-last",
+        "title": "Choose the simplest method that gets the job done",
+        "paragraphs": [
+          "Make a baseline with search, filters or a template. Use a language model for the part that genuinely needs flexible language, classification, summarisation or extraction. A local model may be a good fit when privacy or offline use matters. A hosted model may help if the device cannot run a good model. Let the actual needs decide.",
+          "For anything that retrieves documents, pass only relevant sources and test whether it finds the right passages. For structured data, use a schema and validate every output. If an answer can trigger an external change, add a human confirmation step and retain a clear event record."
+        ]
+      },
+      {
+        "id": "evaluate-and-finish",
+        "title": "Finish with evidence",
+        "paragraphs": [
+          "Write ten ordinary cases, three awkward cases and two cases the tool should refuse or flag. Record acceptable outcomes before trying the model. Count how often a result is usable without repair, how long it takes and what the mistakes cost. Keep the failure examples as regression checks when you make changes.",
+          "Show the prototype to the person it is meant to help. Ask them to complete the task while you watch. Do not teach them the trick that makes your demo work. Notice the point where they hesitate or correct your assumption.",
+          "Ship a small working version. Put the run instructions in the repository, describe the known limitation, and save a short demo that reflects the real thing. A modest tool that removes a repeat annoyance is a better portfolio project than a grand promise nobody can try."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "validate-startup-problem-before-building",
+    "title": "How to Start a Startup: Test the Problem First",
+    "description": "A practical first step for starting a startup: speak to potential users, test whether the problem happens often, measure current workarounds and avoid mistaking compliments for demand.",
+    "category": "Building",
+    "tags": [
+      "start a startup",
+      "customer discovery",
+      "startup validation",
+      "MVP"
+    ],
+    "cover": "/images/blog/learning-3.webp",
+    "coverAlt": "An entrepreneur's notebook with customer notes beside an unfinished prototype",
+    "lede": "A good idea is a sentence. A startup begins when another person makes time, effort or money move to solve the problem.",
+    "status": "ready",
+    "date": "2026-10-17",
+    "related": [
+      "when-to-automate-a-workflow",
+      "build-your-first-personal-ai-project"
+    ],
+    "sources": [
+      {
+        "title": "Y Combinator Startup Library",
+        "url": "https://www.ycombinator.com/library"
+      },
+      {
+        "title": "The Mom Test book and resources",
+        "url": "https://momtestbook.com/"
+      },
+      {
+        "title": "Google Ventures: Design Sprint",
+        "url": "https://www.gv.com/sprint/"
+      }
+    ],
+    "sections": [
+      {
+        "id": "start-with-problem",
+        "title": "Describe the problem before you describe the product",
+        "paragraphs": [
+          "Write the customer, situation, job and current cost in one paragraph. For example: 'Independent tutors spend Sunday evenings matching payments to individual lessons and message students manually when something is missing.' That is a claim you can investigate. 'An AI tutor platform for everyone' is a product pitch that hides several untested assumptions.",
+          "Ask what people currently do, when they last did it, how long it took and what broke. Past behaviour is better evidence than a polite prediction about what they might try. Talk to people who experience the work. Do not pitch the product in the first minutes. Your goal is to find how they already spend time, money or effort."
+        ]
+      },
+      {
+        "id": "signs-of-demand",
+        "title": "Look for action, not applause",
+        "paragraphs": [
+          "People are generous with compliments. They are trying to be kind, they enjoy brainstorming, and they may not want to say no directly. A calendar booking, a data sample, a paid pilot or a repeated attempt to use the prototype is a more costly signal than 'this is cool'. None proves a lasting business by itself, but it narrows the uncertainty.",
+          "A landing-page signup only means the promise earned a click. A waitlist is not revenue. A demo is not a daily habit. State which uncertainty each experiment can reduce. If you need to learn whether tutors will pay for reconciliation, test a narrow manual service or a prototype around that task, then observe whether people put a real process through it."
+        ]
+      },
+      {
+        "id": "small-test",
+        "title": "Run an experiment this week",
+        "paragraphs": [
+          "Write down the risky assumptions: the problem happens often, the buyer experiences it, the workaround is painful, your proposed fix fits their workflow, and someone can reach the buyer repeatedly. Rank them by uncertainty and by what happens if you are wrong.",
+          "Choose a test that is cheap and ethically honest. A clickable mock can test whether users understand a flow. A manual concierge service can test whether an outcome matters before writing an automation. A small paid pilot can test willingness to budget. Never pretend a prototype has a feature it lacks. Ask clear consent before collecting personal data.",
+          "After each conversation, record direct quotes separately from your interpretation. Look for what surprised you and what evidence would change your mind. Talk to more than one kind of potential customer before concluding that the loudest person's use case is the market."
+        ]
+      },
+      {
+        "id": "what-build-next",
+        "title": "Build only after the next question is clear",
+        "paragraphs": [
+          "When the problem recurs and people already work around it, build the thinnest tool that removes one measurable step. Avoid choosing a technology because it sounds fundable. Add a language model only when handling the real input needs flexible language or an uncertain decision. If users can solve it better with one field and a rule, give them the simple thing.",
+          "Set one meaningful first target: hours saved, tasks completed without rework, or whether the user returns next week. Watch a real person use it. Fix the part that prevents repeat use before adding more features.",
+          "Starting a company has legal, financial, tax and regulatory details that depend on country and circumstances. This guide is about testing customer demand, not a substitute for qualified local advice on the rest."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "when-to-automate-a-workflow",
+    "title": "When to Automate a Workflow",
+    "description": "Decide whether to automate a repeated task using frequency, stability, error cost and human judgement. Includes a practical automation scorecard and safe rollout approach.",
+    "category": "Building",
+    "tags": [
+      "workflow automation",
+      "AI automation",
+      "productivity",
+      "decision making"
+    ],
+    "cover": "/images/blog/learning-4.webp",
+    "coverAlt": "A workflow crossing a small lever that can either be flipped automatically or by a person",
+    "lede": "A workflow does not need an agent just because it happens more than once. Automate the steps you understand well enough to catch when the automation is wrong.",
+    "status": "ready",
+    "date": "2026-10-17",
+    "related": [
+      "measure-the-real-cost-of-ai-work",
+      "build-your-first-personal-ai-project"
+    ],
+    "sources": [
+      {
+        "title": "NIST AI Risk Management Framework",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      },
+      {
+        "title": "Google SRE Book: Monitoring Distributed Systems",
+        "url": "https://sre.google/sre-book/monitoring-distributed-systems/"
+      },
+      {
+        "title": "Microsoft Human-AI Interaction Guidelines",
+        "url": "https://www.microsoft.com/en-us/haxtoolkit/ai-guidelines/"
+      }
+    ],
+    "sections": [
+      {
+        "id": "repeatability",
+        "title": "Automate repetition that stays understandable",
+        "paragraphs": [
+          "Good candidates tend to repeat, use reasonably stable inputs and have a clear outcome. Renaming downloaded files by date is predictable. Summarising each support request may contain ambiguity. The second job could still be automated, but it needs a way to show sources, flag uncertain cases and let a human correct the result.",
+          "Start by writing the workflow down as a sequence of steps. If you cannot explain where an exception goes, automation may make the confusion happen faster. Sometimes the best first automation is not a model; it is a script, shortcut, template or form that removes copy-and-paste."
+        ]
+      },
+      {
+        "id": "automation-scorecard",
+        "title": "Use a small scorecard",
+        "paragraphs": [
+          "Give each factor a low, medium or high value: how often does the task occur, how consistent is the input, how much time does it take, what does an error cost, and how much context must a human apply? High frequency and stable inputs are encouraging. High error cost or deep tacit judgement are reasons for review and slower rollout.",
+          "Calculate the total time saved including the time spent checking, fixing exceptions, monitoring the automation and updating it. A tool that saves three minutes per run but needs daily repair is not actually saving three minutes. Make the comparison over a realistic month, not an ideal one-click demo."
+        ],
+        "table": {
+          "headers": [
+            "Factor",
+            "Automation fits better when…",
+            "Keep human control when…"
+          ],
+          "rows": [
+            [
+              "Input",
+              "Formats are stable and available",
+              "Important context is missing"
+            ],
+            [
+              "Decision",
+              "Rules or outcomes are easy to define",
+              "The right answer depends on judgement"
+            ],
+            [
+              "Error cost",
+              "Mistakes are reversible and visible",
+              "Mistakes affect safety, money or rights"
+            ],
+            [
+              "Frequency",
+              "The task repeats predictably",
+              "It is an occasional exception"
+            ],
+            [
+              "Monitoring",
+              "A failure can be caught quickly",
+              "Failures can stay invisible"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "rollout",
+        "title": "Introduce automation with a brake",
+        "paragraphs": [
+          "Run the automation in shadow mode first. Let it suggest what it would do while a human still completes the task. Compare suggestions with real decisions and label disagreement. This reveals edge cases before the script is given permission to act.",
+          "Next allow it to take reversible steps with a clear undo. Keep approvals before sending a message, changing a record, granting access or spending money. Set a stop condition for failures and log the inputs, decision and action. Logs should help you diagnose problems without retaining sensitive details you do not need.",
+          "Only expand permissions when error patterns are understood and the person responsible has a monitoring plan. New input sources or model versions can shift behaviour, so keep regression cases and a rollback path."
+        ]
+      },
+      {
+        "id": "agent-vs-rule",
+        "title": "Know when AI belongs in the workflow",
+        "paragraphs": [
+          "Deterministic automation works when the input and action can be described with reliable rules. AI is useful when the task needs interpretation across varied text, images or speech. For example, a fixed label-to-folder rule needs no language model. Grouping unusual support requests into emerging themes might benefit from one.",
+          "Even then, keep the model away from final actions it cannot justify. Ask it for candidates, require evidence from the input, then validate the output. The more consequential the action, the stronger the confirmation and audit trail should be.",
+          "A little automation that finishes a dull task is a win. A general agent that is hard to understand and impossible to stop is a maintenance obligation in a clever costume."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "claude-code-bmad-method-setup",
+    "title": "Setting Up Claude Code with the BMAD Method",
+    "description": "A practical setup for using Claude Code with the current BMAD-METHOD: install versioned workflows, give the agent a clear project brief, and keep agile planning proportional.",
+    "category": "Building",
+    "tags": [
+      "Claude Code",
+      "BMAD Method",
+      "agile development",
+      "AI coding"
+    ],
+    "cover": "/images/blog/learning-5.webp",
+    "coverAlt": "A software project notebook beside a terminal showing orderly agile planning steps",
+    "lede": "Claude Code does not need a giant prompt that says 'build my whole startup'. Give it the project context and a workflow that tells it what decision to make next.",
+    "status": "ready",
+    "date": "2026-10-17",
+    "related": [
+      "context-engineering-for-coding-agents",
+      "build-your-first-personal-ai-project"
+    ],
+    "sources": [
+      {
+        "title": "Anthropic: Claude Code documentation",
+        "url": "https://docs.anthropic.com/en/docs/claude-code/overview"
+      },
+      {
+        "title": "BMAD-METHOD official repository",
+        "url": "https://github.com/bmad-code-org/BMAD-METHOD"
+      },
+      {
+        "title": "BMAD-METHOD installation guide",
+        "url": "https://docs.bmad-method.org/"
+      },
+      {
+        "title": "BMad official install guide, current versions and setup",
+        "url": "https://docs.bmad-method.org/start/install-bmad/"
+      },
+      {
+        "title": "BMad official first change guide",
+        "url": "https://docs.bmad-method.org/start/build-your-first-change/"
+      }
+    ],
+    "sections": [
+      {
+        "id": "what-bmad-is",
+        "title": "What the method is trying to solve",
+        "paragraphs": [
+          "BMAD-METHOD is an agile planning and development workflow designed to give AI coding agents structured roles and artifacts. It contains workflows for project discovery, product planning, architecture, stories and implementation. The key idea is to turn a broad goal into a sequence of explicit decisions and documents the agent can refer to.",
+          "That can be helpful when work has several moving parts, unknown requirements or a team handoff. It can also become ceremony. A weekend script may need a short README, a task list and a coding session, not product strategy documents written for an imagined scale. Use the structure to reduce confusion rather than to make a tiny project look enterprise-ready."
+        ]
+      },
+      {
+        "id": "install-safely",
+        "title": "Install the current version, not an old video",
+        "paragraphs": [
+          "Start with the official BMAD-METHOD repository and installation guide. The project evolves, so copy the install command and supported client instructions from the current documentation. Older tutorials may refer to package names or slash commands that have changed. Check the release and installation date, and avoid installing unpinned code you found in a random post.",
+          "The official docs currently describe BMad v7 as preview alpha and v6.12 as the stable release. From the project folder, run the Skills CLI install shown in the docs, select Claude Code, and include the bmad skill. Then open Claude Code in that project and ask the bmad skill to run bmad setup. Finish with bmad status so you can see which skills and module versions are installed. The exact version matters because preview workflows and command names change.",
+          "The install guide lists Node.js, npm, Git, a supported skills-capable coding tool and uv for its setup scripts. Check those prerequisites before installing. The guide notes that v7 is still a preview and changes frequently, while v6.12 is frozen except for bug fixes. A new developer can follow the current v7 guide if they are comfortable with change, or choose the documented stable branch if predictability matters more.",
+          "Claude Code supports project instructions and custom skills or commands. Follow Anthropic's current documentation for how your version loads project-level context. Keep project-specific instructions in the repository and review changes the installer makes. Treat a plugin or workflow package like code: inspect where it writes, what tools it can call, and which instructions it adds.",
+          "Use one installation path. Do not combine overlapping BMAD versions and Claude workflows without a reason. Duplicate role names and stale instructions can make an agent choose the wrong process."
+        ],
+        "code": "npx skills add bmad-code-org/BMAD-METHOD\n# Select Claude Code and include the bmad skill\n# Open Claude Code from the project folder\n# Ask the bmad skill: run bmad setup\n# Then verify with: bmad status"
+      },
+      {
+        "id": "give-it-context",
+        "title": "Write a one-page project brief first",
+        "paragraphs": [
+          "Before invoking a long workflow, write the problem, user, success condition, existing stack, known constraints and out-of-scope items. Include the command that runs the project and how you currently verify changes. These facts prevent an agent from inventing a product because the prompt left one empty paragraph.",
+          "Ask for discovery or planning before code if the problem is still uncertain. Make the first deliverable concrete: a short architecture proposal, a list of questions, or a vertical slice. Review the result and correct the assumptions before starting implementation. Your job is to keep the agent attached to the real goal, not blindly approve every generated document.",
+          "A useful instruction names boundaries and a stopping point. For example: 'Plan a local search feature for markdown notes. First inspect the existing app. Propose the smallest version that supports title and body search. List unanswered questions before modifying files.'"
+        ]
+      },
+      {
+        "id": "agile-with-an-agent",
+        "title": "Use agile planning to expose risk, not create paperwork",
+        "paragraphs": [
+          "Break work into tasks that end in something observable. A story that can be run, clicked or checked is easier to review than 'build intelligent workspace'. Keep only artifacts that answer a real question: what does a user need, what are we building, and how do we know it works?",
+          "Claude can write the task breakdown, but it cannot verify that the customer need is true. BMAD can help an agent follow a process, but a process file does not create good product judgement automatically. Confirm requirements with the person affected, inspect code for project constraints, and keep implementation decisions reviewable.",
+          "For a personal project, a brief, a feature checklist, and an architecture note may be enough. For a larger effort, use BMAD's fuller process, but stop generating artifacts when they no longer change what you do next. That keeps your agile workflow agile."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "context-engineering-for-coding-agents",
+    "title": "Context Engineering for Coding Agents",
+    "description": "A practical guide to repository instructions, task context, source-of-truth documents, code discovery and verification for coding agents like Claude Code.",
+    "category": "Building",
+    "tags": [
+      "context engineering",
+      "coding agents",
+      "Claude Code",
+      "AI workflow"
+    ],
+    "cover": "/images/blog/learning-6.webp",
+    "coverAlt": "A coding agent's workspace with project notes connected to selected files of code",
+    "lede": "If the agent cannot tell which instruction matters, adding five more instructions is not help. Good context points at the code and facts that decide the task.",
+    "status": "ready",
+    "date": "2026-10-17",
+    "related": [
+      "claude-code-bmad-method-setup",
+      "build-a-practical-ai-evaluation-set"
+    ],
+    "sources": [
+      {
+        "title": "Anthropic: Context engineering for AI agents",
+        "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"
+      },
+      {
+        "title": "Anthropic: Claude Code memory",
+        "url": "https://docs.anthropic.com/en/docs/claude-code/memory"
+      },
+      {
+        "title": "OpenAI: A practical guide to building agents",
+        "url": "https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf"
+      }
+    ],
+    "sections": [
+      {
+        "id": "find-relevant-context",
+        "title": "The goal is relevance, not volume",
+        "paragraphs": [
+          "A coding agent works from a limited view of your project: files it has read, instructions it has received, commands it has run and notes it has retained. Huge instructions can crowd out the current task and hide the one constraint that changes the implementation.",
+          "Start every task with a pointer to the relevant code, a description of the user-facing outcome and any constraint that cannot be inferred. Ask the agent to inspect before editing. Let source code answer questions about what the project currently does; let an explicit facts file answer stable project or brand information. When two sources disagree, state which one is authoritative.",
+          "Do not paste the entire repository into a prompt. Give the agent a path and an investigation question, then check whether it read the owner of the behaviour before proposing a change."
+        ]
+      },
+      {
+        "id": "project-rules",
+        "title": "Keep durable instructions short and specific",
+        "paragraphs": [
+          "A repository instruction file is useful for stable rules: how to run the app, where content lives, what patterns are accepted, what tests matter and which data is private. It is not the right place to narrate every prior task. Long historical files decay and create conflicts.",
+          "Write instructions so an agent can act on them. 'Keep changes localized to the blog renderer' is clearer than 'be careful'. 'Do not invent personal measurements; link the source for release claims' changes how writing is researched. Include examples when a convention is hard to infer.",
+          "Move detailed material beside the work that needs it. A schema belongs near the data type. A brand facts file can be linked from the content workflow. A long optional process can be a separate skill or guide instead of loading in every coding task."
+        ]
+      },
+      {
+        "id": "context-loop",
+        "title": "A context loop for a focused change",
+        "paragraphs": [
+          "Give the task, ask the agent to inspect the current behaviour, and have it state the specific files and constraints it found. Resolve any mistaken assumption. Then let it make the smallest coherent change. At the end ask what it changed, why, and what evidence verifies it.",
+          "Use file paths, symbols, exact output and errors rather than saying 'the thing doesn't work'. If a task spans an unfamiliar system, ask for a map before asking for a fix. If a narrow function is already known, point directly to it. This reduces wasted exploration and gives you a chance to catch a false starting point.",
+          "For expensive context, summaries should preserve decisions and important evidence, not chronological chatter. A useful handoff says what must remain true, what has changed, where relevant code lives and what is still unknown."
+        ]
+      },
+      {
+        "id": "verify-agent-work",
+        "title": "The agent's summary is not the verification",
+        "paragraphs": [
+          "An agent saying 'done' does not prove the feature works. Run the relevant command, inspect the diff and try the user path that motivated the change. For content, open the actual page and confirm titles, links, images and citations render. For a data change, verify the key invariants against the source.",
+          "Ask for evidence with each completion statement. A passing type check shows the types are consistent, not that a feature is usable. A screenshot shows one state, not every boundary case. Match the verification to the failure that would matter.",
+          "Context engineering improves the chance that an agent does useful work. Accountability remains with the person deciding that the work is ready."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "build-a-practical-ai-evaluation-set",
+    "title": "Build a Practical AI Evaluation Set",
+    "description": "Create a trustworthy first evaluation set for an AI project: collect representative examples, write success criteria before comparing models, score failures and retain regression tests.",
+    "category": "Benchmarks",
+    "tags": [
+      "AI evaluation",
+      "evals",
+      "AI project",
+      "benchmarking"
+    ],
+    "cover": "/images/blog/learning-7.webp",
+    "coverAlt": "A stack of carefully labelled test cards beside a small AI prototype",
+    "lede": "You do not need a public leaderboard to know your feature fails. Ten examples from the real task can reveal more than a hundred model comparisons with somebody else's prompts.",
+    "status": "ready",
+    "date": "2026-10-17",
+    "related": [
+      "benchmark-score-is-not-a-verdict",
+      "benchmark-contamination-explained"
+    ],
+    "sources": [
+      {
+        "title": "OpenAI: Evaluation best practices",
+        "url": "https://platform.openai.com/docs/guides/evals"
+      },
+      {
+        "title": "Anthropic: Demystifying evals for AI agents",
+        "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents"
+      },
+      {
+        "title": "NIST Generative AI Profile",
+        "url": "https://airc.nist.gov/airmf-resources/airmf/"
+      }
+    ],
+    "sections": [
+      {
+        "id": "choose-examples",
+        "title": "Collect examples from the task, not the model demo",
+        "paragraphs": [
+          "Start with the user's actual inputs. Remove sensitive details and get permission to use the material. Include ordinary examples, the awkward ones that arrive in practice, and examples that should make the system pause. A summariser needs short and long documents. A classifier needs each category and cases where category boundaries are unclear.",
+          "Do not let a model generate all the evaluation questions and expected answers. It can help organise a set, but if both tests and output are made by the same system, you risk rewarding its own habits. Have someone who knows the job define what a correct and useful result looks like.",
+          "Keep the examples small enough that a person can inspect them. A table with input, acceptable result, evidence, severity and notes is a solid first format."
+        ]
+      },
+      {
+        "id": "write-rubric",
+        "title": "Define success before you see the output",
+        "paragraphs": [
+          "Write a short rubric with observable criteria. For a document answer, criteria might be factual correctness, relevant source citation, no unsupported detail and a clear 'not found' response when evidence is missing. For a draft message, you may score whether it addresses the request and preserves required facts. Avoid 'sounds good' as the only criterion.",
+          "Separate quality from safety and cost. A response can be fluent but wrong; correct but too slow; mostly useful with one high-impact failure. Track what matters for this use. Label critical failures separately so averages do not hide them.",
+          "If you compare models with human judgement, keep the reviewer blind to which model produced which response where practical. Write down disagreement and resolve the rubric before judging every case by intuition."
+        ]
+      },
+      {
+        "id": "run-repeatably",
+        "title": "Freeze the setup so the comparison means something",
+        "paragraphs": [
+          "Record model ID, prompt version, tools, temperature or sampling settings, input sources and date. Keep one fixed set for comparison and a separate development set for debugging. If the prompt changes, version it. If the model changes, rerun the same tasks.",
+          "For agents, examine the trajectory and outcome. Count the retries and tool calls, note whether the right evidence was available, and inspect side effects. Run repeated attempts for stochastic workflows when you can afford it. One successful screenshot is a demo, not a reliability estimate.",
+          "Small samples do not give precise guarantees. They give you readable evidence about the examples you chose. Expand the set when the product reaches new users or when you discover a new failure class."
+        ]
+      },
+      {
+        "id": "use-failure",
+        "title": "Let failures teach you what to fix",
+        "paragraphs": [
+          "Classify failures before adjusting the prompt. Was required data missing? Did retrieval fail? Did the model misread an instruction? Did validation accept an invalid response? Did the interface hide a needed confirmation? Different causes need different fixes.",
+          "Add a failure example to the regression set after you understand the cause. Change one major thing at a time, then rerun the original set and the new case. A prompt that fixes one task by breaking another is a tradeoff to see, not a win to hide.",
+          "Your first evaluation does not need a complex dashboard or a universal score. A small spreadsheet, a rubric and a repeatable script are enough to start making decisions with evidence. Keep it boring and keep it runnable."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "tokens-context-and-transformers-for-beginners",
+    "title": "Tokens, Context and Transformers: An LLM Guide",
+    "description": "A beginner-friendly explanation of tokens, context windows, transformer attention and next-token prediction, with examples that help debug real language-model applications.",
+    "category": "Learning",
+    "tags": [
+      "LLM basics",
+      "tokens",
+      "transformers",
+      "learn AI"
+    ],
+    "cover": "/images/blog/learning-8.webp",
+    "coverAlt": "A short stream of text broken into glowing token blocks entering a transformer-shaped bridge",
+    "lede": "The model does not read your paragraph the way you do. It gets a sequence of tokens and predicts what comes next. Remember that and a lot of mysterious LLM behaviour becomes easier to debug.",
+    "status": "ready",
+    "date": "2026-10-17",
+    "related": [
+      "how-to-start-learning-ai",
+      "context-engineering-for-coding-agents"
+    ],
+    "sources": [
+      {
+        "title": "Hugging Face NLP course: Transformers",
+        "url": "https://huggingface.co/learn/llm-course/chapter1/1"
+      },
+      {
+        "title": "Attention Is All You Need",
+        "url": "https://arxiv.org/abs/1706.03762"
+      },
+      {
+        "title": "OpenAI tokenization guide",
+        "url": "https://platform.openai.com/docs/guides/text"
+      }
+    ],
+    "sections": [
+      {
+        "id": "tokens",
+        "title": "Tokens are chunks of text, not always whole words",
+        "paragraphs": [
+          "A tokenizer turns text into a sequence of token IDs. Common words may be a single token. Rare names, misspellings, code fragments and other scripts can break into several. The model receives the token sequence and ultimately emits one token at a time. It does not directly see a sentence as the single object your eyes perceive.",
+          "This explains two practical surprises. First, a long name can consume more context and cost than expected. Second, a typo or uncommon spelling may be harder because it produces a less familiar pattern. Inspect token counts when a prompt unexpectedly hits a budget or the API bill rises."
+        ]
+      },
+      {
+        "id": "predict-next",
+        "title": "Next-token prediction creates capability and limits",
+        "paragraphs": [
+          "A language model estimates what token should follow the context so far. Training on large collections of text teaches patterns that let it continue requests in useful ways. Instruction tuning and other training stages shape how those completions behave. The model produces fluent answers because fluent continuations are often plausible, not because every sentence was checked against the world.",
+          "That is why an answer can sound confident while being wrong. Generation is not the same as retrieval or verification. If the task requires fresh facts, retrieve reliable material and check the output. If the task requires a command, validate it before execution."
+        ]
+      },
+      {
+        "id": "context-window",
+        "title": "The context window is working memory, not permanent knowledge",
+        "paragraphs": [
+          "Context is the material presented for the current model call: system instructions, conversation, retrieved passages, tool output and sometimes earlier summaries. A context window limits how much can be processed in one request. Putting more text into the window does not guarantee that the model will attend to every detail equally.",
+          "When a conversation exceeds a practical limit, systems may truncate or summarize. Keep critical facts concise, keep sources close to the question, and ask the model to quote or point to the evidence it used. A longer prompt can add distracting material and cost. A shorter prompt that includes the right passages may work better."
+        ]
+      },
+      {
+        "id": "attention",
+        "title": "Why the transformer metaphor helps",
+        "paragraphs": [
+          "Transformers use attention mechanisms to relate elements of an input sequence. That lets each token's representation incorporate information from other positions, with learned projections and multiple layers. In the 2017 paper Attention Is All You Need, the authors introduced a transformer architecture that relied on attention rather than recurrence and convolution as the central sequence mechanism.",
+          "You do not need to derive the full equations to build a responsible application. You do need to know that context processing has compute and memory costs, that model behaviour depends on what text is present, and that longer context alone does not promise equal recall. When a result changes, compare the input context and retrieval output before blaming the model weights."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "how-to-read-an-ai-research-paper",
+    "title": "How to Read an AI Research Paper",
+    "description": "A structured reading workflow for AI research papers: identify the research question, inspect methods and baselines, read result tables carefully and find limitations before trusting the headline.",
+    "category": "Learning",
+    "tags": [
+      "AI research papers",
+      "learn AI",
+      "machine learning research"
+    ],
+    "cover": "/images/blog/learning-9.webp",
+    "coverAlt": "An open AI research paper with one annotated result table and a pencil",
+    "lede": "You do not have to understand every equation on the first pass. Start by finding out what question the paper actually answers and what evidence it uses.",
+    "status": "ready",
+    "date": "2026-10-17",
+    "related": [
+      "openai-ai-mathematics-results-october-2026",
+      "benchmark-score-is-not-a-verdict"
+    ],
+    "sources": [
+      {
+        "title": "Stanford CS324: Large Language Models",
+        "url": "https://stanford-cs324.github.io/winter2022/"
+      },
+      {
+        "title": "Papers with Code",
+        "url": "https://paperswithcode.com/"
+      },
+      {
+        "title": "How to Read a Paper, S. Keshav",
+        "url": "https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf"
+      }
+    ],
+    "sections": [
+      {
+        "id": "three-passes",
+        "title": "Use three passes",
+        "paragraphs": [
+          "First pass: title, abstract, introduction, section headings and conclusion. Write the problem in one sentence and name the authors' main claim. If you cannot state what changed, you may not need to read the full paper yet.",
+          "Second pass: methodology, data, evaluation and figures. Find the baseline, size and source of the dataset, metric, model version, training or inference setup, and the hardest limitation. Do not treat an abstract number as a complete result.",
+          "Third pass: read technical sections needed to check the claim. Follow definitions and assumptions. Recompute a small example or inspect code if the paper's central result depends on implementation details. Read equations with a question in mind rather than decoding every symbol at once."
+        ]
+      },
+      {
+        "id": "tables",
+        "title": "How to interrogate a result table",
+        "paragraphs": [
+          "Identify each row and column before scanning for bold numbers. Does the table compare the intended systems on the same test? Does it include an ablation that isolates the proposed idea? Is the reported average weighted over tasks or simply the average score? Are there error bars or repeated runs?",
+          "A table can establish a comparative improvement under a setup. It cannot automatically show that the method will generalize to every model, language or task. Look at individual tasks. A high average can hide one severe regression, and one eye-catching best result may be a narrow win against an old baseline."
+        ],
+        "table": {
+          "headers": [
+            "Question",
+            "Where to look",
+            "What a useful answer includes"
+          ],
+          "rows": [
+            [
+              "What changed?",
+              "Method and ablations",
+              "An isolated design difference"
+            ],
+            [
+              "What was tested?",
+              "Dataset and benchmark section",
+              "Source, size, splits and exclusions"
+            ],
+            [
+              "Compared with what?",
+              "Baseline table",
+              "Strong and matching alternatives"
+            ],
+            [
+              "How certain?",
+              "Variance, error bars, runs",
+              "Variation and sample size"
+            ],
+            [
+              "What breaks?",
+              "Limitations and appendix",
+              "Known failure types and scope"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "source-check",
+        "title": "Follow the artifact and the source",
+        "paragraphs": [
+          "If code, prompts, data or supplementary materials are linked, look at them. Reproducing a result may require expensive compute or missing data, but a small implementation test can still catch a mistaken reading. Check the revision history and publication status. A preprint is a public research draft, not the same as peer-reviewed acceptance.",
+          "Trace important claims to the original paper or artifact. An article about a benchmark might simplify the setup or use an outdated model score. When you share the result, link the original source and describe your interpretation as an interpretation."
+        ]
+      },
+      {
+        "id": "take-notes",
+        "title": "Keep notes that help your next experiment",
+        "paragraphs": [
+          "Use four headings: claim, evidence, limitation, next test. Under claim, write the strongest conclusion the paper supports. Under evidence, note the exact measurement and conditions. Under limitation, identify missing evidence or boundary cases. Under next test, record what you might try in your own problem.",
+          "You will remember papers better if you do something with them. Reproduce a small plot, compare one baseline or explain the work to a peer without looking at the abstract. If you cannot tell them what the method adds, reread the method section rather than repeating the paper's title.",
+          "A research paper is an argument supported by artifacts. Your job as a reader is to see whether the evidence carries the weight of the claim."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "safe-first-deployment-for-ai-projects",
+    "title": "Ship an AI Feature With a Safe Fallback",
+    "description": "A launch checklist for a small AI feature covering user confirmation, output validation, data handling, monitoring, fallback behaviour and regression tests.",
+    "category": "Building",
+    "tags": [
+      "AI deployment",
+      "AI safety",
+      "ship AI project",
+      "product engineering"
+    ],
+    "cover": "/images/blog/learning-10.webp",
+    "coverAlt": "A small AI prototype crossing a checkpoint with a human reviewer and rollback switch",
+    "lede": "An AI demo has one path: the part that works. A real feature also needs a plan for the part that does not.",
+    "status": "ready",
+    "date": "2026-10-17",
+    "related": [
+      "when-to-automate-a-workflow",
+      "measure-the-real-cost-of-ai-work"
+    ],
+    "sources": [
+      {
+        "title": "NIST AI Risk Management Framework",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      },
+      {
+        "title": "Anthropic: Building effective agents",
+        "url": "https://www.anthropic.com/engineering/building-effective-agents"
+      },
+      {
+        "title": "OpenAI evaluation best practices",
+        "url": "https://platform.openai.com/docs/guides/evals"
+      }
+    ],
+    "sections": [
+      {
+        "id": "define-boundary",
+        "title": "Decide what the model is allowed to do",
+        "paragraphs": [
+          "Write down which data the feature reads, which actions it can take and where a person must confirm. Generating a draft is different from sending it. Suggesting a file to remove is different from deleting it. Treat tool permissions as product decisions, not implementation details hidden in a prompt.",
+          "Use the least access needed for the task. Keep secrets out of model context unless they are required and handled appropriately. If the system calls an external model, explain the data path to users and follow your organisation's policies. NIST's AI Risk Management Framework offers a way to identify, assess and manage risks across the system lifecycle."
+        ]
+      },
+      {
+        "id": "validate-output",
+        "title": "Validate output before it reaches a user",
+        "paragraphs": [
+          "Prefer a structured schema when the next step expects structured data. Parse the response, reject invalid fields and make missing information visible. Check source citations against the actual retrieved passages. A syntactically valid response can still be factually wrong, so use task-specific checks and review the cases that matter.",
+          "For user-generated text, mark suggestions as drafts and let the user edit before sending. For decisions with serious consequences, do not rely on a general language model as the only authority. Get appropriate human expertise and safeguards. This tutorial is about general product engineering, not high-stakes domain advice."
+        ]
+      },
+      {
+        "id": "failure-path",
+        "title": "Make failure ordinary and recoverable",
+        "paragraphs": [
+          "A timeout should show a useful message. Missing evidence should produce 'I could not find that' instead of an invented answer. A model provider being unavailable should leave the rest of your app usable where possible. Keep a non-AI path when the task can still be completed manually.",
+          "Log enough to debug: model version, prompt version, failure type and timing. Do not retain raw sensitive data just because it's convenient. Decide retention and access deliberately. Add a visible report button and a mechanism to recover the user's work if generation fails."
+        ]
+      },
+      {
+        "id": "observe-and-improve",
+        "title": "Watch the feature after launch",
+        "paragraphs": [
+          "Monitor completion, errors, latency, cost and user corrections. Sample outputs with the right data protections. Changes in users, model versions, tool APIs or source documents can introduce new failures even when your code did not change.",
+          "Keep a regression set drawn from real task patterns and redacted failures. Run it before changing a prompt or model. Make a rollback possible. An early launch is a way to learn under controlled limits, not permission to stop checking what the feature does.",
+          "A well-scoped first release lets a person try the helpful part, see when the AI is unsure, and continue the job if it fails. That is a much better milestone than a perfect demo."
+        ]
+      }
+    ]
+  }
+]

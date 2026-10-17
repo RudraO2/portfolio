@@ -8,11 +8,13 @@ import { Projects } from './components/Projects'
 import { Contact } from './components/Contact'
 import TargetCursor from './components/reactbits/TargetCursor'
 import { useRevealObserver } from './hooks/useReveal'
+import { BlogArticle, BlogIndex, NotFound, WritingPreview } from './blog/Blog'
+import { posts } from './content/posts'
 
 const BG_IMAGE_1 = '/img1.jpeg'
 const BG_IMAGE_2 = '/img2.jpeg'
 
-function App() {
+function Portfolio() {
   useRevealObserver()
 
   return (
@@ -20,7 +22,6 @@ function App() {
       className="min-h-screen bg-black tracking-[-0.02em]"
       style={{ fontFamily: "'Inter', sans-serif" }}
     >
-      <TargetCursor targetSelector=".cursor-target" spinDuration={2} />
       <Nav />
 
       <section
@@ -95,10 +96,23 @@ function App() {
         <TechMarquee />
         <Achievements />
         <Projects />
+        <WritingPreview />
         <Contact />
       </main>
     </div>
   )
+}
+
+function App({ pathname = typeof window === 'undefined' ? '/' : window.location.pathname }: { pathname?: string }) {
+  const path = pathname.replace(/\/+$/, '') || '/'
+  const post = posts.find(item => path === `/blog/${item.slug}`)
+  let page
+  if (path === '/') page = <Portfolio />
+  else if (path === '/blog') page = <BlogIndex />
+  else if (post) page = <BlogArticle post={post} />
+  else page = <NotFound />
+
+  return <><TargetCursor targetSelector=".cursor-target, .journal a, .journal button, .journal input" spinDuration={2} />{page}</>
 }
 
 export default App
