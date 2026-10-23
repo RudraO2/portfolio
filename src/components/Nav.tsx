@@ -31,7 +31,7 @@ export function Nav({ current }: { current?: 'writing' | 'project' }) {
       </div>
 
       <a
-        href="mailto:24f3001340@ds.study.iitm.ac.in"
+        href="mailto:rudra.pratap.12233@gmail.com"
         className="cursor-target hidden lg:block bg-white/10 border border-white/20 text-white text-sm font-semibold px-6 py-2.5 rounded-full hover:bg-white hover:text-black transition-all"
       >
         Hire Me

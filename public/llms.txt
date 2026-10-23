@@ -2,6 +2,16 @@
 
 > Rudra Techie is the online name of Rudra Pratap Singh (earlier known as Rudra O2), a developer from Jaipur, India, and a BS in Data Science student at IIT Madras. Rudra builds web apps, Android tools and AI benchmarks and ships them where people can use them.
 
+## Role
+- Software developer from Jaipur, Rajasthan, India. BS in Data Science student at IIT Madras.
+
+## Skills and stack
+- Languages: Python, TypeScript, JavaScript, Kotlin
+- Frameworks and libraries: React, Next.js, React Native, Expo, Tailwind CSS, Node.js, Streamlit, Phaser
+- Data and backend: Supabase, pandas
+- Cloud and DevOps: Vercel, Netlify, Git, GitHub Actions, Gradle, Vitest
+- AI and data: LLM benchmarking, local open-weight models, Groq and Gemini APIs, MCP servers, on-premise AI
+
 ## Wins
 - 1st Place, HackPulse 2026 "The Pre Heist", UEM Jaipur, 4 Oct 2026 (solo, team Hot Reload). Built a dashboard to run Slack, Telegram and WhatsApp groups from one place.
 - 3rd Runner Up, Agora EchoSphere 2026 Hackathon, Microsoft office Gurugram, 12 Sep 2026. Team built Aria, a real-time voice sales agent: https://github.com/Aryan-Techie/aria
@@ -19,6 +29,54 @@
 - Website: https://rudratechie.xyz/
 - GitHub: https://github.com/RudraO2
 - LinkedIn: https://www.linkedin.com/in/rudratechie/
+- X: https://x.com/rudratechie
+- Medium: https://medium.com/@rudratechie
+- Substack: https://rudratechie.substack.com
+- dev.to: https://dev.to/rudratechie
+- Peerlist: https://peerlist.io/rudratechie
+
+## Writing
+
+- [The Notebook](https://rudratechie.xyz/blog): Essays about AI culture, research, benchmarks and building.
+- [Coding Agent Benchmarks Miss the Hard Part](https://rudratechie.xyz/blog/code-agent-benchmarks-miss-the-hard-part): Passing coding tasks is not the same as safely shipping changes. A practical look at what agent benchmarks reveal, what they leave out, and how to test a coding agent yourself.
+- [RAG vs Long Context: Choose by Failure Mode](https://rudratechie.xyz/blog/rag-vs-long-context-choose-by-failure): A clear engineering guide to retrieval-augmented generation and long context windows, with a decision framework based on freshness, corpus size, citations, and failure cost.
+- [Write Technical Posts Without AI Slop](https://rudratechie.xyz/blog/write-technical-posts-without-ai-slop): A practical workflow for writing original technical content that uses AI without losing your examples, judgement, evidence, or natural voice.
+- [The Real Cost of AI Work](https://rudratechie.xyz/blog/measure-the-real-cost-of-ai-work): Measure AI project cost in retries, review, latency, maintenance and errors. A practical worksheet to decide whether a feature is earning its complexity.
+- [LinkedIn AI Slop Is Making Us Worse at Thinking](https://rudratechie.xyz/blog/linkedin-ai-slop-brain-rot): Why synthetic polish spreads on LinkedIn, how it changes what we reward, and a practical way to make AI-assisted writing sound like you again.
+- [An AI Benchmark Score Is Not a Verdict](https://rudratechie.xyz/blog/benchmark-score-is-not-a-verdict): How to read AI benchmarks without being fooled by a leaderboard. Learn to inspect task design, scoring, baselines, contamination, variance, and the gap between a score and your job.
+- [Benchmark Contamination: When Tests Leak](https://rudratechie.xyz/blog/benchmark-contamination-explained): What training data leakage means for AI benchmark scores, what contamination can and cannot prove, and how to evaluate models on genuinely fresh work.
+- [How to Start Learning AI: A Practical Path](https://rudratechie.xyz/blog/how-to-start-learning-ai): A practical AI learning path from Python and machine learning basics to language models, evaluation and a first useful project, with a weekly study loop.
+- [Build an AI Project That Solves a Real Problem](https://rudratechie.xyz/blog/build-your-first-personal-ai-project): A step-by-step framework to choose a personal AI project, define its success measure, build a safe prototype and learn from the results.
+- [How to Start a Startup: Test the Problem First](https://rudratechie.xyz/blog/validate-startup-problem-before-building): A practical first step for starting a startup: speak to potential users, test whether the problem happens often, measure current workarounds and avoid mistaking compliments for demand.
+- [When to Automate a Workflow](https://rudratechie.xyz/blog/when-to-automate-a-workflow): Decide whether to automate a repeated task using frequency, stability, error cost and human judgement. Includes a practical automation scorecard and safe rollout approach.
+- [Setting Up Claude Code with the BMAD Method](https://rudratechie.xyz/blog/claude-code-bmad-method-setup): A practical setup for using Claude Code with the current BMAD-METHOD: install versioned workflows, give the agent a clear project brief, and keep agile planning proportional.
+- [Context Engineering for Coding Agents](https://rudratechie.xyz/blog/context-engineering-for-coding-agents): A practical guide to repository instructions, task context, source-of-truth documents, code discovery and verification for coding agents like Claude Code.
+- [Build a Practical AI Evaluation Set](https://rudratechie.xyz/blog/build-a-practical-ai-evaluation-set): Create a trustworthy first evaluation set for an AI project: collect representative examples, write success criteria before comparing models, score failures and retain regression tests.
+- [Tokens, Context and Transformers: An LLM Guide](https://rudratechie.xyz/blog/tokens-context-and-transformers-for-beginners): A beginner-friendly explanation of tokens, context windows, transformer attention and next-token prediction, with examples that help debug real language-model applications.
+- [How to Read an AI Research Paper](https://rudratechie.xyz/blog/how-to-read-an-ai-research-paper): A structured reading workflow for AI research papers: identify the research question, inspect methods and baselines, read result tables carefully and find limitations before trusting the headline.
+- [Ship an AI Feature With a Safe Fallback](https://rudratechie.xyz/blog/safe-first-deployment-for-ai-projects): A launch checklist for a small AI feature covering user confirmation, output validation, data handling, monitoring, fallback behaviour and regression tests.
+- [DeepSeek Harness and Cordis, Explained](https://rudratechie.xyz/blog/deepseek-harness-cordis-and-agent-engineering): A technical look at DeepSeek Harness, Cordis, its plugin architecture, traceable sessions and runtime modes, plus what builders should examine before calling it the future of agents.
+- [Gemini 4 Argon Benchmarks: What the Scores Miss](https://rudratechie.xyz/blog/gemini-4-argon-benchmarks-and-real-work): Google reports strong Gemini 4 Argon results, but what do the benchmark suites measure, which gains transfer to real work, and what does a different model cost?
+- [Phonon-2: Open Speech Recognition on Device](https://rudratechie.xyz/blog/phonon-2-open-speech-recognition-on-device): A close look at Phonon-2's compact weights, reported word error rate, Apple Neural Engine speed, licensing and the real evaluation questions for local transcription.
+- [What AI-Generated Math Proofs Actually Verify](https://rudratechie.xyz/blog/openai-ai-mathematics-results-october-2026): How to assess OpenAI's October 2026 mathematics results: what the Lean formalizations establish, what the human-written manuscripts still need, and why discovery is not the same as verification.
+- [Why Word Error Rate Isn't Enough](https://rudratechie.xyz/blog/speech-recognition-wer-production-evaluation): Understand how WER works, which transcript errors matter in practice, and how to build a speech recognition evaluation using your actual microphones, accents and vocabulary.
+- [Compare AI Models on Cost, Latency and Quality](https://rudratechie.xyz/blog/reproducible-model-comparison-cost-latency): A repeatable method for comparing AI models on your own tasks, controlling prompts and tools while tracking success, retries, latency and total operating cost.
+
+## Projects
+
+- [Faraday Web Demo](https://rudratechie.xyz/projects/airgapped-os): A browser-based walkthrough of Faraday, a workstation concept for confidential AI work. The public demo simulates the desktop and uses hosted models, while the companion Faraday project is designed for local inference. Source: https://github.com/RudraO2/AirgappedOS
+- [Faraday](https://rudratechie.xyz/projects/faraday): A local-first AI workbench for confidential industrial tasks, built around open-weight models, explicit network controls and an egress record that makes the privacy boundary inspectable. Source: https://github.com/RudraO2/Faraday
+- [Visual Tutor](https://rudratechie.xyz/projects/visual-tutor): An AI study workspace that turns a topic into a concept map, structured interactive visualizations and a tutor that follows the learner’s current focus. Source: https://github.com/RudraO2/visual-tutor
+- [Office Drama](https://rudratechie.xyz/projects/office-drama): A 2D office mystery where characters follow routines and exchange persistent gossip, turning conversations into clues that can travel through the simulated workplace. Source: https://github.com/RudraO2/office-drama
+- [Tokenbrawl](https://rudratechie.xyz/projects/tokenbrawl): A controlled fighting-game harness that treats token budget as an in-match resource, with replayable decisions and mechanics designed to keep response latency out of the winner calculation. Source: https://github.com/RudraO2/tokenbrawl
+- [NSE Screener](https://rudratechie.xyz/projects/nse-screener): A research dashboard that scores market and sector conditions, then ranks Indian stocks using documented price, trend and volume criteria. Source: https://github.com/RudraO2/nse-screener
+- [Ghostpad](https://rudratechie.xyz/projects/ghostpad): A notes-style messaging prototype that encrypts a message into a code-shaped text envelope and hands it to WhatsApp, exploring how interface appearance affects casual on-screen privacy. Source: https://github.com/RudraO2/ghostpad
+- [TrueG](https://rudratechie.xyz/projects/trueg): An Android utility that reads native telephony state to distinguish 4G LTE from 5G NR, including standalone and non-standalone 5G where the device exposes that information. Source: https://github.com/RudraO2/TrueG
+- [Stratum](https://rudratechie.xyz/projects/stratum): An offline document-intelligence workbench that turns reports, spreadsheets and scanned pages into cited facts, reviewable answers and parliamentary reply drafts. Source: https://github.com/RudraO2/Stratum
+- [The Gen AI Roadmap](https://rudratechie.xyz/projects/genai-roadmap): A graph-shaped generative AI learning roadmap with four distinct tracks, prerequisite-aware quests, concrete completion checks and portable local progress. Source: https://github.com/RudraO2/genai-roadmap
+- [AnywhereCode](https://rudratechie.xyz/projects/anywherecode): A phone-first coding agent designed for Termux that plans a project, generates files, runs development commands and helps people build software from an Android device. Source: https://github.com/RudraO2/AnywhereCode
+- [6 Months Left](https://rudratechie.xyz/projects/six-months-left): A deadline-based focus app for Android that puts a countdown in the way of chosen time-sink apps and adds deliberate friction before changing its rules. Source: https://github.com/RudraO2/six-months-left
+- [WhatsApp Automation](https://rudratechie.xyz/projects/whatsapp-automation): A TypeScript WhatsApp assistant prototype that batches incoming messages, uses Gemini to draft replies with per-chat history and exposes pause and setup controls. Source: https://github.com/RudraO2/Whatsapp-automation
 
 ## Writing
 

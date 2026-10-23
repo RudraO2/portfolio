@@ -52,10 +52,10 @@ export function Contact() {
         >
           <p className="text-xs uppercase tracking-[0.2em] text-white/40 mb-3">Email</p>
           <a
-            href="mailto:24f3001340@ds.study.iitm.ac.in"
+            href="mailto:rudra.pratap.12233@gmail.com"
             className="cursor-target link-underline inline-block font-playfair italic text-2xl sm:text-4xl md:text-5xl text-white break-all leading-snug"
           >
-            24f3001340@ds.study.iitm.ac.in
+            rudra.pratap.12233@gmail.com
           </a>
         </div>
 
@@ -98,7 +98,7 @@ export function Contact() {
               LinkedIn
             </a>
             <a
-              href="mailto:24f3001340@ds.study.iitm.ac.in"
+              href="mailto:rudra.pratap.12233@gmail.com"
               className="cursor-target text-sm text-white/60 hover:text-emerald-300 transition-colors"
             >
               Email

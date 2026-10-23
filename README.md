@@ -84,4 +84,4 @@ Wins: 1st place at HackPulse 2026 (UEM Jaipur) and 3rd Runner Up at Agora EchoSp
 - **Website:** [rudratechie.xyz](https://rudratechie.xyz/)
 - **GitHub:** [@RudraO2](https://github.com/RudraO2)
 - **LinkedIn:** [rudratechie](https://www.linkedin.com/in/rudratechie/)
-- **Email:** [24f3001340@ds.study.iitm.ac.in](mailto:24f3001340@ds.study.iitm.ac.in)
+- **Email:** [rudra.pratap.12233@gmail.com](mailto:rudra.pratap.12233@gmail.com)

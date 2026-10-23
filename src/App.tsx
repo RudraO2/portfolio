@@ -65,12 +65,13 @@ function Portfolio() {
 
         {/* Bottom-left paragraph */}
         <div
-          className="hidden sm:block absolute bottom-14 left-10 md:left-14 max-w-[300px] z-50 hero-anim hero-fade"
+          className="hidden sm:block absolute bottom-14 left-10 md:left-14 max-w-[340px] z-50 hero-anim hero-fade"
           style={{ animationDelay: '0.7s' }}
         >
           <p className="text-sm text-white/80 leading-relaxed">
-            Developer from Jaipur and IIT Madras student. A showcase of my projects, hackathon
-            wins, and the ideas I am bringing to life.
+            Rudra Techie (Rudra Pratap Singh) is a software developer from Jaipur and a Data
+            Science student at IIT Madras. He builds web apps, Android tools and AI benchmarks
+            with React, Next.js, Kotlin and Python. He won 1st place at HackPulse 2026.
           </p>
         </div>
 

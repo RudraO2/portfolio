@@ -27,7 +27,7 @@ function metadata({ title, description, path, image, imageAlt, type = 'website',
   const graph = post
     ? [person, { '@type': 'BlogPosting', '@id': `${url}#article`, headline: post.title, description, image: [`${origin}${image}`], author: { '@id': person['@id'] }, publisher: { '@id': person['@id'] }, mainEntityOfPage: url, datePublished: `${post.date}T12:00:00+05:30`, dateModified: `${post.date}T12:00:00+05:30`, inLanguage: 'en', articleSection: post.category, keywords: post.tags.join(', '), citation: post.sources.map(source => source.url) }]
     : project
-      ? [person, { '@type': 'SoftwareSourceCode', '@id': `${url}#project`, name: project.title, description, image: `${origin}${image}`, creator: { '@id': person['@id'] }, url, inLanguage: 'en', keywords: [project.category, ...project.stack].join(', '), programmingLanguage: project.stack.join(', '), codeRepository: project.github, isPartOf: { '@id': `${origin}/#website` } }]
+      ? [person, { '@type': 'SoftwareSourceCode', '@id': `${url}#project`, name: project.title, description, image: `${origin}${image}`, creator: { '@id': person['@id'] }, url, inLanguage: 'en', keywords: [project.category, ...project.stack].join(', '), programmingLanguage: project.stack.join(', '), codeRepository: project.github, ...(project.live ? { sameAs: [project.live] } : {}), isPartOf: { '@id': `${origin}/#website` } }]
       : path === '/blog'
         ? [{ '@type': 'CollectionPage', name: 'The Notebook | Rudra Techie', url, description, author: person, mainEntity: { '@type': 'ItemList', itemListElement: posts.map((item, index) => ({ '@type': 'ListItem', position: index + 1, name: item.title, url: articleUrl(item) })) } }]
         : [{ '@type': 'WebPage', name: title, url, description, about: person }]

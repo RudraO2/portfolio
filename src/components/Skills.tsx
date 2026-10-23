@@ -55,6 +55,13 @@ const cards: SkillCard[] = [
   },
 ]
 
+const groups = [
+  { title: 'Languages', items: ['Python', 'TypeScript', 'JavaScript', 'Kotlin'] },
+  { title: 'Frameworks', items: ['React', 'Next.js', 'React Native', 'Expo', 'Tailwind CSS', 'Node.js', 'Streamlit', 'Phaser'] },
+  { title: 'Cloud and DevOps', items: ['Vercel', 'Netlify', 'Supabase', 'Git', 'GitHub Actions', 'Gradle', 'Vitest'] },
+  { title: 'AI and data', items: ['LLM benchmarking', 'Local open-weight models', 'Groq and Gemini APIs', 'MCP servers', 'pandas'] },
+]
+
 export function Skills() {
   return (
     <section
@@ -114,6 +121,19 @@ Everything I reach for, from a first commit to a shipped release.
                 <p className="mt-3 text-sm text-white/60 leading-relaxed">{description}</p>
               </div>
             </article>
+          ))}
+        </div>
+
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" data-reveal>
+          {groups.map(({ title, items }) => (
+            <div key={title}>
+              <h3 className="text-[11px] uppercase tracking-[0.2em] text-emerald-300/80">{title}</h3>
+              <ul className="mt-3 space-y-1.5 text-sm text-white/60">
+                {items.map(item => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
           ))}
         </div>
       </div>

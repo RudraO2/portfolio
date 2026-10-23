@@ -52,6 +52,15 @@ export function ProjectPage({ project }: { project: PortfolioProject }) {
           <a href="/#projects" className="back-writing">← Back to all projects</a>
         </aside>
         <article className="project-body">
+          <section className="project-glance" aria-labelledby="glance-title">
+            <h2 id="glance-title">{project.title} at a glance</h2>
+            <dl>
+              <div><dt>The idea</dt><dd>{project.hook}</dd></div>
+              <div><dt>What it does</dt><dd>{project.description}</dd></div>
+              <div><dt>Built with</dt><dd>{project.stack.join(', ')}</dd></div>
+              <div><dt>Status</dt><dd>{project.status}</dd></div>
+            </dl>
+          </section>
           {project.sections.map(section => <section key={section.title}>
             <h2>{section.title}</h2>
             {section.paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
