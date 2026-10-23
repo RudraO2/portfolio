@@ -94,6 +94,11 @@ function Portfolio() {
       </section>
 
       <main className="relative z-40 bg-black text-white">
+        <p className="sm:hidden px-6 pt-10 text-sm text-white/70 leading-relaxed border-b border-white/10 pb-10">
+          Rudra Techie (Rudra Pratap Singh) is a software developer from Jaipur and a Data
+          Science student at IIT Madras. He builds web apps, Android tools and AI benchmarks
+          with React, Next.js, Kotlin and Python. He won 1st place at HackPulse 2026.
+        </p>
         <About />
         <Skills />
         <TechMarquee />
