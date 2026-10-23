@@ -96,7 +96,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://w
 const feed = `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rudra Techie: The Notebook</title><link>${origin}/blog</link><description>AI, benchmarks, and building useful things.</description><language>en</language><atom:link href="${origin}/feed.xml" rel="self" type="application/rss+xml" />${posts.map(post => `<item><title>${escape(post.title)}</title><link>${articleUrl(post)}</link><guid isPermaLink="true">${articleUrl(post)}</guid><description>${escape(post.description)}</description><pubDate>${new Date(`${post.date}T12:00:00+05:30`).toUTCString()}</pubDate><category>${escape(post.category)}</category></item>`).join('')}</channel></rss>\n`
 const existingLlms = (await readFile(resolve('public/llms.txt'), 'utf8')).split('\n## Writing\n')[0].trimEnd()
 const llms = `${existingLlms}\n\n## Writing\n\n- [The Notebook](${origin}/blog): Essays about AI culture, research, benchmarks and building.\n${posts.map(post => `- [${post.title}](${articleUrl(post)}): ${post.description}`).join('\n')}\n\n## Projects\n\n${projects.map(project => `- [${project.title}](${projectUrl(project)}): ${project.description} Source: ${project.github}`).join('\n')}\n`
-for (const [filename, content] of [['sitemap.xml', sitemap], ['feed.xml', feed], ['llms.txt', llms]]) {
+for (const [filename, content] of [['sitemap.xml', sitemap], ['sitemap-pages.xml', sitemap], ['feed.xml', feed], ['llms.txt', llms]]) {
   await writeFile(resolve(dist, filename), content)
   await writeFile(resolve('public', filename), content)
 }
