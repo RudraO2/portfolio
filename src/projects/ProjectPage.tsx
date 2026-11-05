@@ -30,7 +30,7 @@ function ProjectFooter() {
 function ProjectCard({ project }: { project: PortfolioProject }) {
   return <article className="journal-card project-related-card">
     <a href={projectPath(project)} className="card-image" tabIndex={-1} aria-hidden="true">
-      <img src={project.coverSmall} srcSet={`${project.coverSmall} 600w, ${project.cover} 1200w`} sizes="(max-width: 720px) 100vw, 360px" width="1200" height="675" alt="" loading="lazy" decoding="async" />
+      <img src={project.coverSmall} srcSet={`${project.coverSmall} 600w, ${project.cover} 1200w`} sizes="(max-width: 720px) 100vw, 360px" width="1200" height="675" alt={project.coverAlt} loading="lazy" decoding="async" />
     </a>
     <div className="card-copy"><p className="eyebrow">{project.category}</p><h2><a href={projectPath(project)}>{project.title}</a></h2><p>{project.description}</p><a className="read-link" href={projectPath(project)}>Project details <span aria-hidden="true">↗</span></a></div>
   </article>
