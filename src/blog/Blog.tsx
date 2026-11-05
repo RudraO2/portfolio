@@ -24,7 +24,7 @@ function Footer() {
 }
 
 function Card({ post, featured = false }: { post: BlogPost; featured?: boolean }) {
-  return <article className={`journal-card${featured ? ' featured-card' : ''}`}><a href={articlePath(post)} className="card-image" tabIndex={-1} aria-hidden="true"><img src={featured ? post.cover : smallCover(post)} width="1200" height="675" alt="" loading={featured ? 'eager' : 'lazy'} decoding="async" /></a><div className="card-copy"><p className="eyebrow">{post.category} <span>· {readingTime(post)} min read</span></p><h2><a href={articlePath(post)}>{post.title}</a></h2><p>{post.description}</p><a className="read-link" href={articlePath(post)}>Read the essay <span aria-hidden="true">↗</span><span className="sr-only">: {post.title}</span></a></div></article>
+  return <article className={`journal-card${featured ? ' featured-card' : ''}`}><a href={articlePath(post)} className="card-image" tabIndex={-1} aria-hidden="true"><img src={featured ? post.cover : smallCover(post)} width="1200" height="675" alt={`Cover image for ${post.title}`} loading={featured ? 'eager' : 'lazy'} decoding="async" /></a><div className="card-copy"><p className="eyebrow">{post.category} <span>· {readingTime(post)} min read</span></p><h2><a href={articlePath(post)}>{post.title}</a></h2><p>{post.description}</p><a className="read-link" href={articlePath(post)}>Read the essay <span aria-hidden="true">↗</span><span className="sr-only">: {post.title}</span></a></div></article>
 }
 
 export function BlogIndex() {
